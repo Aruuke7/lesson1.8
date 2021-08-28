@@ -17,7 +17,8 @@ public class Magic extends Hero {
             if (heroes[i].getHealth() > 0){
                 if (this != heroes[i] && heroes[i].getSuperAbility() != SuperAbility.REVIVES_THE_FIRST_DECEASED
                 && heroes[i].getSuperAbility() != SuperAbility.SUMMONED_ANGEL_OR_RAVEN
-                        && heroes[i].getSuperAbility() != SuperAbility.STUN){
+                        && heroes[i].getSuperAbility() != SuperAbility.STUN
+                        && heroes[i].getSuperAbility() != SuperAbility.FREEZE){
                     heroes[i].setDamage(heroes[i].getDamage() + increasedDamage);
                 }
             }
