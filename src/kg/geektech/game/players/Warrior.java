@@ -12,7 +12,7 @@ public class Warrior extends Hero {
         int coeff = RPG_Game.random.nextInt(5) + 2;
         int criticalDamage = this.getDamage() * coeff;
         boss.setHealth(boss.getHealth() + this.getDamage() - criticalDamage);
-        System.out.println("Critical damage: "
+        System.out.println("Warrior hits critically: "
                 + this.getDamage() * coeff);
     }
 }

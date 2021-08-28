@@ -10,7 +10,7 @@ public class RPG_Game {
 
     public static void startGame() {
 
-        Boss boss = new Boss(1000, 50);
+        Boss boss = new Boss(1200, 50);
         Warrior warrior = new Warrior(270, 15);
         Medic support = new Medic(230, 5, 20);
         Magic magic = new Magic(260, 20);
@@ -62,8 +62,8 @@ public class RPG_Game {
         }else {
             System.out.println("Boss is stunned!");
         }
-        boolean freeze = random.nextBoolean();
-        if (!freeze) {
+        boolean allHeroesAreFrozen = random.nextBoolean();
+        if (!allHeroesAreFrozen) {
             heroesHit(boss, loki, heroes);
             heroesApplySuperAbilities(boss, heroes);
         }else if (loki.getHealth() > 0){

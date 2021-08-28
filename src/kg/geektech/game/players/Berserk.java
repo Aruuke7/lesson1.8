@@ -15,6 +15,7 @@ public class Berserk extends Hero {
 
         int partOfTheDamage = (boss.getDamage() / (RPG_Game.random.nextInt(3)+2));
         boss.setHealth(boss.getHealth() - partOfTheDamage );
+        this.setHealth(this.getHealth() + partOfTheDamage);
 
         System.out.println("Berserk blocked damage: " + partOfTheDamage);
 
