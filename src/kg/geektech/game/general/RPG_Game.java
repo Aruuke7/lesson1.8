@@ -66,7 +66,7 @@ public class RPG_Game {
         if (!freeze) {
             heroesHit(boss, loki, heroes);
             heroesApplySuperAbilities(boss, heroes);
-        }else {
+        }else if (loki.getHealth() > 0){
             System.out.println("Heroes are frozen!");
         }
         printStatistics(boss, loki, heroes);
